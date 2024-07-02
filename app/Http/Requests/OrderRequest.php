@@ -25,9 +25,8 @@ class OrderRequest extends FormRequest
             'costumer_name' => ['required','min:3'],
             'costumer_phone'=>['required','min:11','numeric'],
             'delivery_address'=>['required','min:10'],
-            'product_name'=>['required'],
+            'product_uuid'=>['required'],
             'qty' => ['required','min:1','numeric']
-
         ];
     }
 }

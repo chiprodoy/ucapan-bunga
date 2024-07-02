@@ -12,28 +12,28 @@
   <div class="order-page text-white container py-5">
     <h2 class="mb-4 text-center">Formulir Pemesanan</h2>
     @if($errors->any())
-        {{ implode('', $errors->all('<div>:message</div>')) }}
+        {!! implode('', $errors->all('<div class="alert alert-danger" role="alert">:message</div>')) !!}
     @endif
     <form name="form1" id="form1" method="POST" action="{{route('public.order.store')}}">
       @csrf
         <div class="mb-3">
         <label for="name" class="form-label">Nama</label>
-        <input type="text" class="form-control" id="costumer_name" name="costumer_name" required>
+        <input type="text" value="{{old('costumer_name')}}" class="form-control" id="costumer_name" name="costumer_name" required>
       </div>
       <div class="mb-3">
         <label for="phone" class="form-label">Nomor Telepon</label>
-        <input type="tel" class="form-control" id="costumer_phone" name="costumer_phone" required>
+        <input type="tel" value="{{old('costumer_phone')}}" class="form-control" id="costumer_phone" name="costumer_phone" required>
       </div>
       <div class="mb-3">
-        <label for="product" class="form-label">Pilih Produk</label>
-        <select class="form-select form-control" id="product_name" name="product_name" required>
+        <label for="product_uuid" class="form-label">Pilih Produk</label>
+        <select class="form-select form-control" id="product_uuid" name="product_uuid" required>
           <option value="">Pilih...</option>
           @foreach ($products as $item)
 
             @if ($item->product_slug==$slug)
-                <option selected='selected' value="{{ $item->id }}"> {{ $item->product_name}}</option>
+                <option selected='selected' value="{{ $item->uuid }}"> {{ $item->product_name}}</option>
             @else
-                <option value="{{ $item->id }}"> {{ $item->product_name}}</option>
+                <option value="{{ $item->uuid }}"> {{ $item->product_name}}</option>
             @endif
 
           @endforeach
@@ -41,14 +41,15 @@
         </select>
       </div>
       <div class="mb-3">
-        <label for="address" class="form-label">Alamat Pengiriman</label>
-        <textarea class="form-control" id="delivery_address" name="delivery_address" rows="3" required></textarea>
+        <label for="address" class="form-label">Alamat Pengiriman Ucapan (pastikan anda memasukkan alamat yang lengkap untuk tujuan pengiriman)</label>
+        <textarea class="form-control" id="delivery_address" name="delivery_address" rows="3" required>{{old('delivery_address')}}</textarea>
       </div>
       <div class="mb-3">
         <label for="message" class="form-label">Pesan yang ingin disampaikan</label>
-        <textarea class="form-control" id="notes" name="notes" rows="3" required placeholder="contoh : selamat atas ..."></textarea>
+        <textarea class="form-control" id="notes" name="notes" rows="3" required placeholder="contoh : selamat atas ...">{{old('notes')}}</textarea>
       </div>
-      <button type="submit" class="btn btn-danger btn-lg">Kirim Pesanan</button>
+      <input type="hidden" name="qty" id="qty" value="1"/>
+      <button type="submit" class="btn btn-danger btn-lg">Pesan Sekarang</button>
     </form>
   </div>
 

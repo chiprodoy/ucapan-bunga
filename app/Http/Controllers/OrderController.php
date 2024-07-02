@@ -36,7 +36,16 @@ class OrderController extends Controller
      */
     public function store(OrderRequest $request)
     {
-        $data = $request->safe()->only(['costumer_name', 'costumer_phone','delivery_address','product_name','qty','delivery_phone']);
+        $product = Product::where('uuid',$request->product_uuid)->first();
+        $data = $request->safe()->all();
+
+        $data['uuid']='-';
+        $data['invoice_number']='-';
+        $data['notes'] = $request->notes;
+        $data['product_name']=$product->product_name;
+        $data['price']=$product->product_price;
+        $data['total_price']=0;
+        $data['grand_total_price'] = 0;
 
         if(empty($data['delivery_phone'])){
             $data['delivery_phone']=$data['costumer_phone'];
@@ -44,14 +53,14 @@ class OrderController extends Controller
 
         $order=Order::create($data);
 
-        $message = 'Hi kak, saya ingin memesan ucapan bunga *Data Pesanan:* \n
-            Nama : '.$data['costumer_name'].'\n
-            Hp : '.$data['costumer_phone'].'\n
-            *Produk* \n
-            Produk yang dipesan : '.$data['product_name'].'\n
-            alamat pengiriman ucapan bunga : *'.$data['delivery_address'].'*\n
-            pesan yang disampaikan : *'.$data['notes'].'*\n'
-
+        $message = 'Hi kak, saya ingin memesan ucapan bunga
+        *Data Pesanan:*
+            Nama : '.$data['costumer_name'].'
+            Hp : '.$data['costumer_phone'].'
+            *Produk*
+            Produk yang dipesan : '.$data['product_name'].'
+            alamat pengiriman ucapan bunga : *'.$data['delivery_address'].'*
+            pesan yang disampaikan : *'.$data['notes'].'*'
             ;
 
         if($order) return redirect('https://wa.me/6285158804947?text='.urlencode($message));
