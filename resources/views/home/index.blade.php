@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ucapan Bunga</title>
+  <title>Ucapan Bunga - Pesan Papan bunga sekarang di ucapanbunga.com</title>
+  <meta name="description" content="Berikan kesan yang tak terlupakan dengan ucapan papan bunga kami. Pesan sekarang di UcapanBunga.com">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{asset('css/HomePage.css')}}">
 </head>
@@ -27,7 +28,7 @@
         @foreach ($products as $item)
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                <img src="{{ asset('images/'.$item->image_cover)}}" class="card-img-top card-img-product" alt="Product 1">
+                <img src="{{ asset('images/'.$item->image_cover)}}" class="card-img-top card-img-product" alt="Papan bunga ">
                 <div class="card-body">
                     <h5 class="card-title">{{ $item->product_name}}</h5>
                       <a href="{{route('public.order',$item->product_slug)}}" class="btn btn-danger btn-lg">Pesan Sekarang</a>
