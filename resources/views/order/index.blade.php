@@ -49,7 +49,9 @@
         <textarea class="form-control" id="notes" name="notes" rows="3" required placeholder="contoh : selamat atas ...">{{old('notes')}}</textarea>
       </div>
       <input type="hidden" name="qty" id="qty" value="1"/>
-      <button type="submit" class="btn btn-danger btn-lg">Pesan Sekarang</button>
+      <button type="submit" class="btn btn-success btn-lg">Pesan Sekarang</button>
+      <a href="{{route('public.home')}}" class="btn btn-default btn-lg">Kembali</a>
+
     </form>
   </div>
 

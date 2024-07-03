@@ -5,14 +5,20 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class HomeController extends WebController
 {
+
     public $products;
+
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
+        $this->title='Ucapan Bunga - Pesan Ucapan Papan bunga sekarang di ucapanbunga.com';
+        $this->description = $description = 'Berikan kesan yang tak terlupakan dengan ucapan papan bunga kami. Pesan sekarang di UcapanBunga.com';
+
         $this->products=Product::all();
         return view('home.index',get_object_vars($this));
     }
