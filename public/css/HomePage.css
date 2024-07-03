@@ -17,3 +17,11 @@
 .card-img-product{
     min-height: 200px;
 }
+.order-page {
+    max-width: 600px;
+
+}
+#order-body{
+  background-color: #2c3e50;
+
+}

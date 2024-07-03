@@ -10,15 +10,14 @@ class HomeController extends WebController
 
     public $products;
 
-
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
         $this->title='Ucapan Bunga - Pesan Ucapan Papan bunga sekarang di ucapanbunga.com';
-        $this->description = $description = 'Berikan kesan yang tak terlupakan dengan ucapan papan bunga kami. Pesan sekarang di UcapanBunga.com';
-
+        $this->description = 'Berikan kesan yang tak terlupakan dengan ucapan papan bunga kami. Pesan sekarang di UcapanBunga.com';
+        $this->keywords = explode(',',$this->keyword);
         $this->products=Product::all();
         return view('home.index',get_object_vars($this));
     }

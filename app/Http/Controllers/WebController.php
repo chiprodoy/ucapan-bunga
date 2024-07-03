@@ -14,6 +14,8 @@ class WebController extends Controller
 
     public $meta;
 
+    public $keywords=[];
+
     public function __construct()
     {
         $this->keyword = env('KEYWORDS');
