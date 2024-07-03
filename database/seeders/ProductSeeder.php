@@ -30,8 +30,6 @@ class ProductSeeder extends Seeder
             'product_price'=>500000
         ]);
 
-
-
         Product::create([
             'uuid'=>'-',
             'product_name'=>'Papan Bunga Dukacita Ukuran Besar',

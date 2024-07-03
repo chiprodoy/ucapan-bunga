@@ -11,6 +11,16 @@
         <priority>0.8</priority>
             </url>
     <url>
+        <loc>https://ucapanbunga.com/order/36b1f-papan-bunga-ucapan-selamat-ukuran-besar</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/order/5f4a2-papan-bunga-dukacita-ukuran-besar</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
         <loc>https://ucapanbunga.com/order/f6cad-papan-bunga-pernikahan-ukuran-besar</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -21,12 +31,7 @@
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>https://ucapanbunga.com/order/5f4a2-papan-bunga-dukacita-ukuran-besar</loc>
-            <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-            </url>
-    <url>
-        <loc>https://ucapanbunga.com/order/36b1f-papan-bunga-ucapan-selamat-ukuran-besar</loc>
+        <loc>https://ucapanbunga.com/order/a54a4-papan-bunga-pernikahan-ukuran-kecil</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
@@ -36,8 +41,75 @@
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>https://ucapanbunga.com/order/a54a4-papan-bunga-pernikahan-ukuran-kecil</loc>
-            <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <loc>https://ucapanbunga.com/cari/ucapan-bunga</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/papan-ucapan</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/papan-bunga</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/papan-dukacita</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/papan-selamat-nikah</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/ucapan-bunga-palembang</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/papan-ucapan-palembang</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/papan-bunga-palembang</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-palembang</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/papan-dukacita-palembang</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/papan-selamat-nikah-palembang</loc>
+        <lastmod>2024-07-02T00:00:00+07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
             </url>
 </urlset>
