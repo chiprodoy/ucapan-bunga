@@ -7,7 +7,7 @@ use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
-class OrderController extends Controller
+class OrderController extends WebController
 {
     public $products;
 
@@ -19,6 +19,10 @@ class OrderController extends Controller
     public function index($slug='')
     {
         $this->slug = $slug;
+        $this->title='Pemesanan - Ucapan Bunga';
+        $this->description = 'Berikan kesan yang tak terlupakan dengan ucapan papan bunga kami. Pesan sekarang di UcapanBunga.com';
+        $this->keywords = explode(',',$this->keyword);
+
         $this->products=Product::all();
         return view('order.index',get_object_vars($this));
     }

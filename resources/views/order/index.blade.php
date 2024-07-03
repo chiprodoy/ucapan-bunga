@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pemesanan - Ucapan Bunga</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{asset('css/OrderPage.css')}}">
-</head>
-<body>
+@extends('template')
+@section('content')
+<body id="order-body">
+
 
   <div class="order-page text-white container py-5">
     <h2 class="mb-4 text-center">Formulir Pemesanan</h2>
@@ -55,8 +49,7 @@
     </form>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  @include('footer')
+
 </body>
-</html>
+@endsection

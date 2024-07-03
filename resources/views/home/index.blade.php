@@ -1,5 +1,6 @@
 @extends('template')
 @section('content')
+<body>
   <!-- Hero Section -->
   <section class="hero text-white text-center d-flex align-items-center justify-content-center">
     <div class="container">
@@ -57,4 +58,8 @@
       </div>
     </div>
   </section>
+
+  @include('footer')
+
+</body>
 @endsection
