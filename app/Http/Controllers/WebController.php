@@ -16,7 +16,6 @@ class WebController extends Controller
 
     public function __construct()
     {
-        parent::__construct();
         $this->keyword = env('KEYWORDS');
     }
 }
