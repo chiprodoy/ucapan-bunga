@@ -23,7 +23,7 @@
                 <img src="{{ asset('images/'.$item->image_cover)}}" class="card-img-top card-img-product"
                 alt="Papan bunga ">
                 <div class="card-body">
-                    <h5 class="card-title">{{ $item->product_name}}</h5>
+                    <h5 class="card-title"><a href='{{route('public.product.show',$item->product_slug)}}'>{{ $item->product_name}}</a></h5>
                       <a href="{{route('public.order',$item->product_slug)}}" class="btn btn-danger btn-lg">
                         Pesan Sekarang
                       </a>

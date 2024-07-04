@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,4 +24,8 @@ Route::get('/order/{productslug?}',[OrderController::class,'index'])->name('publ
 Route::post('/order/{productslug?}',[OrderController::class,'store'])->name('public.order.store');
 
 Route::get('/cari/{keyword}',[SearchController::class,'show'])->name('public.search.result');
+
+Route::get('/produk',[ProductController::class,'index'])->name('public.product');
+
+Route::get('/produk/{productslug}',[ProductController::class,'show'])->name('public.product.show');
 

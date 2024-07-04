@@ -20,7 +20,7 @@ class OrderController extends WebController
     {
         $this->slug = $slug;
         $this->title='Pemesanan - Ucapan Bunga';
-        $this->description = 'Berikan kesan yang tak terlupakan dengan ucapan papan bunga kami. Pesan sekarang di UcapanBunga.com';
+        $this->description = "Pemesanan $slug, Berikan kesan yang tak terlupakan dengan ucapan papan bunga kami. Pesan sekarang di UcapanBunga.com";
         $this->keywords = explode(',',$this->keyword);
 
         $this->products=Product::all();

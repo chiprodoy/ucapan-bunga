@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Results for "{{ $query }}" - UcapanBunga.com</title>
+    <title>Hasil pencarian untuk "{{ $query }}" - UcapanBunga.com</title>
     <meta name="description"
         content="Hasil pencarian untuk '{{ $query }}'. Temukan produk papan bunga terbaik di UcapanBunga.com.">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -12,9 +12,9 @@
 
 <body>
     <div class="container mt-5">
-        <h1>Search Results for "{{ $query }}"</h1>
+        <h1>Hasil pencarian untuk "{{ $query }}"</h1>
         @if ($products->isEmpty())
-            <p>No products found matching your query.</p>
+            <p>Tidak ada produk yang sesuai dengan pencarian anda.</p>
         @else
             <div class="row">
                 @foreach ($products as $product)
@@ -23,7 +23,6 @@
                             <img class="card-img-top" height="200" src="{{ asset('images/'.$product->image_cover) }}" alt="{{ $product->product_name }}">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $product->product_name }}</h5>
-                                <p class="card-text">{{ $product->product_description }}</p>
                       <a href="{{route('public.order',$product->product_slug)}}" class="btn btn-danger btn-lg">Pesan Sekarang</a>
 
                             </div>
