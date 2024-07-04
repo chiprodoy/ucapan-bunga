@@ -24,7 +24,10 @@ class Order extends MainModel
         'total_price',
         'ongkir',
         'tax',
-        'grand_total_price'
+        'grand_total_price',
+        'tgl_sewa',
+        'tgl_kembali'
+
     ];
 
     public function setInvoiceNumberAttribute($value)

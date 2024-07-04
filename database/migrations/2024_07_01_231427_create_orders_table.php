@@ -28,6 +28,8 @@ return new class extends Migration
             $table->double('ongkir')->default(0);
             $table->double('tax')->default(0);
             $table->double('grand_total_price');
+            $table->dateTime('tgl_sewa')->nullable();
+            $table->dateTime('tgl_kembali')->nullable();
             $table->timestamps();
         });
     }
