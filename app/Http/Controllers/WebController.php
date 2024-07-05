@@ -19,5 +19,7 @@ class WebController extends Controller
     public function __construct()
     {
         $this->keyword = env('KEYWORDS');
+        $this->keywords = explode(',',$this->keyword);
+
     }
 }

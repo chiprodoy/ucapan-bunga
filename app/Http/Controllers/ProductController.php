@@ -44,7 +44,19 @@ class ProductController extends WebController
         $this->products = Product::where('product_slug',$slug)->first();
         $this->title=$this->products->product_name;
         $this->description = strip_tags($this->products->product_description);
-        $this->keywords = explode(',',$this->keyword);
+
+        if(!empty($this->products->meta_title)){
+            $this->title = $this->products->meta_title;
+        }
+
+        if(!empty($this->products->meta_keyword)){
+            $this->keywords = $this->products->meta_keyword;
+        }
+
+        if(!empty($this->products->meta_description)){
+            $this->description = $this->products->meta_description;
+        }
+
         return view('product.show',get_object_vars($this));
         //
     }
