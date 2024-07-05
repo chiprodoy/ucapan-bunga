@@ -50,7 +50,7 @@ class ProductController extends WebController
         }
 
         if(!empty($this->products->meta_keyword)){
-            $this->keywords = $this->products->meta_keyword;
+            $this->keyword = $this->products->meta_keyword;
         }
 
         if(!empty($this->products->meta_description)){
