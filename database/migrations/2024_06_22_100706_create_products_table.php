@@ -19,6 +19,9 @@ return new class extends Migration
             $table->text('product_description')->nullable();
             $table->decimal('product_price');
             $table->string('image_cover');
+            $table->string('meta_title')->nullable();
+            $table->string('meta_keyword')->nullable();
+            $table->string('meta_description')->nullable();
             $table->timestamps();
         });
     }
