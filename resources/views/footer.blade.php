@@ -13,7 +13,7 @@
                 <h2>Keywords</h2>
 
                     @foreach ($keywords as $item)
-                        <a href='{{route('public.search.result',$item)}}'>{{$item}}</a>
+                        <a href='{{route('public.search.result',str_replace(' ','-',$item))}}'>{{$item}}</a>
                     @endforeach
             </div>
             <div class="col-4">

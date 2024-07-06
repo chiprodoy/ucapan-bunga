@@ -23,8 +23,8 @@
                 <img src="{{ asset('images/'.$item->image_cover)}}" class="card-img-top card-img-product"
                 alt="Papan bunga ">
                 <div class="card-body">
-                    <h5 class="card-title"><a href='{{route('public.product.show',$item->product_slug)}}'>{{ $item->product_name}}</a></h5>
-                      <a href="{{route('public.order',$item->product_slug)}}" class="btn btn-danger btn-lg">
+                    <h5 class="card-title"><a title="{{$item->product_name}}" href='{{route('public.product.show',$item->product_slug)}}'>{{ $item->product_name}}</a></h5>
+                      <a href="{{route('public.order',$item->product_slug)}}" title="Beli {{$item->product_name}}" class="btn btn-danger btn-lg" >
                         Pesan Sekarang
                       </a>
                 </div>
@@ -35,29 +35,10 @@
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials py-5 bg-light text-center">
-    <div class="container">
-      <h2 class="mb-5">Apa Kata Pelanggan</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <blockquote class="blockquote">
-            <p class="mb-0">"Papan bunga yang sangat indah dan berkualitas!" - Andi</p>
-          </blockquote>
-        </div>
-        <div class="col-md-4">
-          <blockquote class="blockquote">
-            <p class="mb-0">"Layanan cepat dan ramah, sangat puas!" - Budi</p>
-          </blockquote>
-        </div>
-        <div class="col-md-4">
-          <blockquote class="blockquote">
-            <p class="mb-0">"Harga terjangkau dengan kualitas terbaik." - Siti</p>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Testimonials -->
+    {{-- @include('home.testimoni') --}}
+
+    @include('home.blog')
 
   @include('footer')
 
