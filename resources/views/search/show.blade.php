@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasil pencarian untuk "{{ $query }}" - UcapanBunga.com</title>
+    <title>Jual {{ str_replace('-',' ',$query) }} - UcapanBunga.com</title>
     <meta name="description"
-        content="Hasil pencarian untuk '{{ $query }}'. Temukan produk papan bunga terbaik di UcapanBunga.com.">
+        content="Jual {{ str_replace('-',' ',$query) }}. Temukan produk papan bunga terbaik dan harga bersahabat di UcapanBunga.com.">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="container mt-5">
-        <h1>Hasil pencarian untuk "{{ $query }}"</h1>
+        <h1>Hasil pencarian untuk "{{ str_replace('-',' ',$query) }}"</h1>
         @if ($products->isEmpty())
             <p>Tidak ada produk yang sesuai dengan pencarian anda.</p>
         @else
@@ -24,6 +24,21 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ $product->product_name }}</h5>
                       <a href="{{route('public.order',$product->product_slug)}}" class="btn btn-danger btn-lg">Pesan Sekarang</a>
+
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+            <hr/>
+            <div class="row">
+                @foreach ($blogs as $item)
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img class="card-img-top" height="200" src="{{ asset('images/'.$item->cover) }}" alt="{{ $item->title }}">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href='{{route('public.blog.show',$item->slug)}}'>{{ $item->title }}</a></h5>
+                                <p>{{ substr(strip_tags($item->content),0,100)}}...</p>
 
                             </div>
                         </div>

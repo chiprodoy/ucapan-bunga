@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Product;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -11,6 +12,8 @@ class SearchController extends Controller
     public $query ;
 
     public $products;
+
+    public $blogs;
 
     public $currentMonth;
     /**
@@ -45,6 +48,9 @@ class SearchController extends Controller
         $this->query = $keyword;
         $sql = Product::where('product_name', 'like', "%$this->query%")
                             ->orWhere('product_description', 'like', "%$this->query%");
+
+        $this->blogs = Blog::where('title', 'like', "%$this->query%")
+                            ->orWhere('content', 'like', "%$this->query%")->get();
 
         $currentMonth = Carbon::now()->locale('id')->isoFormat('dddd, D MMMM YYYY');
 

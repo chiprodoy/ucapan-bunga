@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -9,6 +10,8 @@ class HomeController extends WebController
 {
 
     public $products;
+
+    public $blogs;
 
     /**
      * Display a listing of the resource.
@@ -18,7 +21,11 @@ class HomeController extends WebController
         $this->title='Ucapan Bunga - Pesan Ucapan Papan bunga sekarang di ucapanbunga.com';
         $this->description = 'Berikan kesan yang tak terlupakan dengan ucapan papan bunga kami. Pesan sekarang di UcapanBunga.com';
         $this->keywords = explode(',',$this->keyword);
+
         $this->products=Product::all();
+
+        $this->blogs = Blog::all();
+
         return view('home.index',get_object_vars($this));
     }
 
