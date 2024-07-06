@@ -10,7 +10,7 @@ class WebController extends Controller
 
     public $description;
 
-    public $keyword;
+    public String $keyword;
 
     public $meta;
 

@@ -7,7 +7,7 @@ use App\Models\Product;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
-class SearchController extends Controller
+class SearchController extends WebController
 {
     public $query ;
 
@@ -46,11 +46,25 @@ class SearchController extends Controller
     public function show(string $keyword)
     {
         $this->query = $keyword;
+        $keywordSearch = explode('-',$keyword);
+
+        $this->title="Jual ".str_replace('-',' ',$this->query)." | UcapanBunga.com";
+        $this->description = "Jual ".str_replace('-',' ',$this->query)." Temukan produk ".str_replace('-',' ',$this->query)." terbaik dan harga bersahabat di UcapanBunga.com.";
+        $this->keyword = $this->keyword.', '.str_replace('-',' ',$this->query);
+
         $sql = Product::where('product_name', 'like', "%$this->query%")
                             ->orWhere('product_description', 'like', "%$this->query%");
 
-        $this->blogs = Blog::where('title', 'like', "%$this->query%")
-                            ->orWhere('content', 'like', "%$this->query%")->get();
+
+        $sqlBlog = Blog::where('title', 'like', "%$this->query%")
+                            ->orWhere('content', 'like', "%$this->query%");
+
+        foreach($keywordSearch as $k =>$v){
+            $sql->orWhere('meta_keyword','like','%'.$v.'%');
+            $sqlBlog->orWhere('meta_keyword','like','%'.$v.'%');
+        }
+
+        $this->blogs=$sqlBlog->get();
 
         $currentMonth = Carbon::now()->locale('id')->isoFormat('dddd, D MMMM YYYY');
 

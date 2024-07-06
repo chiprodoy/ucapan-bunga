@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jual {{ str_replace('-',' ',$query) }} - UcapanBunga.com</title>
-    <meta name='title' content="Jual {{ str_replace('-',' ',$query) }} - UcapanBunga.com"/>
-    <meta name="description"
-        content="Jual {{ str_replace('-',' ',$query) }}. Temukan produk papan bunga terbaik dan harga bersahabat di UcapanBunga.com.">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
+@extends('template')
+@section('content')
 
 <body>
     <div class="container mt-5">
@@ -319,6 +309,6 @@
             </div>
         </div>
     </div>
+    @include('footer')
 </body>
-
-</html>
+@endsection
