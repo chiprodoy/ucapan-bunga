@@ -49,9 +49,9 @@
     </div>
     <div class="container text-muted mt-5">
 
-        <h2>Jual Beli {{$query}} Online Terlengkap, Aman &amp; Nyaman di ucapanbunga.com</h2>
+        <h2>Jual Beli {{str_replace('-',' ',$query)}} Online Terlengkap, Aman &amp; Nyaman di ucapanbunga.com</h2>
         <div data-testid="cntrTopProducts" class="css-3p2a5c">
-            <h2 data-unify="Typography" class="css-28fzbw-unf-heading e1qvo2ff2">Daftar Harga {{$query}}
+            <h2 data-unify="Typography" class="css-28fzbw-unf-heading e1qvo2ff2">Daftar Harga {{str_replace('-',' ',$query)}}
                 Terbaru {{ Carbon\Carbon::now()->locale('id')->isoFormat('MMMM YYYY')}}</h2>
             <table>
                 <tbody>
@@ -211,16 +211,16 @@
         </div>
         <div data-testid="cntrBottomContent" data-collapsed="false">
             <div>
-                Lengkapi aneka kebutuhan untuk berbagai macam keperluan pesta anda dengan {{$query}} terbaik di ucapanbunga.com.
-                Kini kamu bisa beli {{$query}} dengan aneka pilihan
+                Lengkapi aneka kebutuhan untuk berbagai macam keperluan pesta anda dengan {{str_replace('-',' ',$query)}} terbaik di ucapanbunga.com.
+                Kini kamu bisa beli {{str_replace('-',' ',$query)}} dengan aneka pilihan
                 terlengkap mulai dari ukuran, bentuk, warna hingga bahan yang berkualitas. Sedang mencari harga
-                peralatan {{$query}} terbaru saat ini, baik satuan hingga grosir? Di ucapanbunga.com, kamu bisa
-                temukan daftar harga {{$query}} terbaru baik eceran hingga grosir {{ Carbon\Carbon::now()->locale('id')->isoFormat('MMMM YYYY')}} yang bisa kamu
+                peralatan {{str_replace('-',' ',$query)}} terbaru saat ini, baik satuan hingga grosir? Di ucapanbunga.com, kamu bisa
+                temukan daftar harga {{str_replace('-',' ',$query)}} terbaru baik eceran hingga grosir {{ Carbon\Carbon::now()->locale('id')->isoFormat('MMMM YYYY')}} yang bisa kamu
                 urutkan dari harga termurah. Tak hanya itu saja, semua transaksi jual beli online aneka peralatan
-                {{$query}} juga akan terasa lebih menyenangkan dengan pilihan metode pembayaran lengkap
-                seperti bebas ongkir, bayar ditempat (COD), cicilan 0% hingga promo {{$query}} untuk pengguna
-                baru! Ingin butuh cepat produk {{$query}}? Tenang saja, di ucapanbunga.com tersedia pilihan
-                pengiriman satu hari sampai. Jadi tunggu apalagi? Beli aneka produk {{$query}} terlengkap
+                {{str_replace('-',' ',$query)}} juga akan terasa lebih menyenangkan dengan pilihan metode pembayaran lengkap
+                seperti bebas ongkir, bayar ditempat (COD), cicilan 0% hingga promo {{str_replace('-',' ',$query)}} untuk pengguna
+                baru! Ingin butuh cepat produk {{str_replace('-',' ',$query)}}? Tenang saja, di ucapanbunga.com tersedia pilihan
+                pengiriman satu hari sampai. Jadi tunggu apalagi? Beli aneka produk {{str_replace('-',' ',$query)}} terlengkap
                 &amp; berkualitas dengan aman &amp; nyaman di ucapanbunga.com sekarang!</div>
         </div>
         <div data-testid="divRelatedLinksFind" class="css-10ib5jr">
