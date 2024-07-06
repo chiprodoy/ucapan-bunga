@@ -2,7 +2,7 @@
 <footer class="footer py-4 bg-dark text-white ">
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-4">
                 <h5>Navigasi</h5>
                 <ul style="list-style: none" class="pl-0">
                     <li><a href="{{route('public.home')}}" title="ucapanbunga.com">Home</a></li>
@@ -13,14 +13,14 @@
                 </ul>
             </div>
 
-            <div class="col-4">
+            <div class="col-md-4">
                 <h5>Keywords</h5>
 
                     @foreach ($keywords as $item)
                         <a href='{{route('public.search.result',str_replace(' ','-',$item))}}'>{{$item}}</a>
                     @endforeach
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <p>© 2024 Ucapan Bunga. All rights reserved.</p>
                 <p>Contact: cs@ucapanbunga.com </p>
             </div>
