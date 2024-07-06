@@ -15,3 +15,17 @@ class MainModel extends Model
 
 
 }
+
+trait useSlug{
+
+
+    public function textToSlug() : String {
+        return '-';
+    }
+
+    public function setSlugAttribute($value)
+    {
+
+        $this->attributes['slug']=substr($this->uuid,0,5).'-'.str_replace(' ','-',strtolower($this->textToSlug()));
+    }
+}

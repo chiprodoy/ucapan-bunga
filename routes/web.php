@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
@@ -29,3 +30,5 @@ Route::get('/produk',[ProductController::class,'index'])->name('public.product')
 
 Route::get('/produk/{productslug}',[ProductController::class,'show'])->name('public.product.show');
 
+Route::get('/blog',[BlogController::class,'index'])->name('public.blog');
+Route::get('/blog/{slug}',[BlogController::class,'show'])->name('public.blog.show');
