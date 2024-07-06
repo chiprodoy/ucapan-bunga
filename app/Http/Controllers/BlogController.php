@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class BlogController extends WebController
 {
     public $blogs;
+
+    public $relateProducts;
     /**
      * Display a listing of the resource.
      */
@@ -60,6 +63,16 @@ class BlogController extends WebController
         if(!empty($this->blogs->meta_description)){
             $this->description = $this->blogs->meta_description;
         }
+
+        $keywords=str_replace(',','',$this->keyword);
+        $keywords=explode(' ',$keywords);
+        $sql=Product::query();
+
+        foreach($keywords as $k => $v){
+            $sql->orwhere('product_slug','like','%'.$v.'%');
+        }
+
+        $this->relateProducts=$sql->get();
 
         return view('blog.show',get_object_vars($this));
     }

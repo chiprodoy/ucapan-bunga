@@ -1,250 +1,310 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>http://localhost:8000/</loc>
+        <loc>https://ucapanbunga.com/</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/order</loc>
+        <loc>https://ucapanbunga.com/order</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/produk/b401b-papan-bunga-pernikahan-ukuran-besar</loc>
+        <loc>https://ucapanbunga.com/order/f6cad-papan-bunga-pernikahan-ukuran-besar</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/order/b401b-papan-bunga-pernikahan-ukuran-besar</loc>
+        <loc>https://ucapanbunga.com/produk/36b1f-papan-bunga-ucapan-selamat-ukuran-besar</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/produk/b3d14-papan-bunga-ucapan-selamat-ukuran-besar</loc>
+        <loc>https://ucapanbunga.com/order/5f4a2-papan-bunga-dukacita-ukuran-besar</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/order/b3d14-papan-bunga-ucapan-selamat-ukuran-besar</loc>
+        <loc>https://ucapanbunga.com/produk/5f4a2-papan-bunga-dukacita-ukuran-besar</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/produk/8d792-papan-bunga-dukacita-ukuran-besar</loc>
+        <loc>https://ucapanbunga.com/order/36b1f-papan-bunga-ucapan-selamat-ukuran-besar</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/order/8d792-papan-bunga-dukacita-ukuran-besar</loc>
+        <loc>https://ucapanbunga.com/order/6bc9d-papan-bunga-dukacita-ukuran-kecil</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/produk/3f64e-papan-bunga-pernikahan-ukuran-kecil</loc>
+        <loc>https://ucapanbunga.com/cari/ucapan-bunga</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/order/3f64e-papan-bunga-pernikahan-ukuran-kecil</loc>
+        <loc>https://ucapanbunga.com/produk/6bc9d-papan-bunga-dukacita-ukuran-kecil</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/produk/b1708-papan-bunga-ucapan-selamat-ukuran-kecil</loc>
+        <loc>https://ucapanbunga.com/blog/41df5-rayakan-hari-ulang-tahun-kejaksaan-dengan-ucapan-papan-bunga</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/order/b1708-papan-bunga-ucapan-selamat-ukuran-kecil</loc>
+        <loc>https://ucapanbunga.com/cari/papan-ucapan</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/produk/fae96-papan-bunga-dukacita-ukuran-kecil</loc>
+        <loc>https://ucapanbunga.com/cari/papan-bunga</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/order/fae96-papan-bunga-dukacita-ukuran-kecil</loc>
+        <loc>https://ucapanbunga.com/produk/a54a4-papan-bunga-pernikahan-ukuran-kecil</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/blog/41df5-rayakan-hari-ulang-tahun-kejaksaan-dengan-ucapan-papan-bunga</loc>
+        <loc>https://ucapanbunga.com/order/a54a4-papan-bunga-pernikahan-ukuran-kecil</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/ucapan-bunga</loc>
+        <loc>https://ucapanbunga.com/cari/papan-dukacita</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-ucapan</loc>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-bunga</loc>
+        <loc>https://ucapanbunga.com/cari/papan-ucapan-palembang</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/karangan-bunga</loc>
+        <loc>https://ucapanbunga.com/cari/papan-selamat-nikah</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-dukacita</loc>
+        <loc>https://ucapanbunga.com/cari/papan-selamat-nikah-palembang</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-selamat-nikah</loc>
+        <loc>https://ucapanbunga.com/cari/papan-dukacita-palembang</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/ucapan-bunga-palembang</loc>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-palembang</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-ucapan-palembang</loc>
+        <loc>https://ucapanbunga.com/produk/f6cad-papan-bunga-pernikahan-ukuran-besar</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-bunga-palembang</loc>
+        <loc>https://ucapanbunga.com/produk/95dc7-papan-bunga-ucapan-selamat-ukuran-kecil</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/karangan-bunga-palembang</loc>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-mawar-merah</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-dukacita-palembang</loc>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-grand-opening</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-selamat-nikah-palembang</loc>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-plastik</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000</loc>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-duka</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/order/b0f0b-papan-bunga-ucapan-selamat-ukuran-besar</loc>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-pernikahan</loc>
             <changefreq>daily</changefreq>
         <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/ucapan-bunga</loc>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-selamat-ulang-tahun</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-ucapan-selamat-ulang-tahun</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-papan-tangerang</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-malang</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-wisuda</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/order/95dc7-papan-bunga-ucapan-selamat-ukuran-kecil</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-dukacita</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-ulang-tahun</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/order/b0f0b-papan-bunga-ucapan-selamat-ukuran-besar</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/papan-bunga-palembang</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/ucapan-bunga-palembang</loc>
+            <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://ucapanbunga.com/cari/ucapan-bunga</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-ucapan</loc>
+        <loc>https://ucapanbunga.com/cari/papan-ucapan</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-bunga</loc>
+        <loc>https://ucapanbunga.com/cari/papan-bunga</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/karangan-bunga</loc>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-dukacita</loc>
+        <loc>https://ucapanbunga.com/cari/papan-dukacita</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-selamat-nikah</loc>
+        <loc>https://ucapanbunga.com/cari/papan-selamat-nikah</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/ucapan-bunga-palembang</loc>
+        <loc>https://ucapanbunga.com/cari/ucapan-bunga-palembang</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-ucapan-palembang</loc>
+        <loc>https://ucapanbunga.com/cari/papan-ucapan-palembang</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-bunga-palembang</loc>
+        <loc>https://ucapanbunga.com/cari/papan-bunga-palembang</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/karangan-bunga-palembang</loc>
+        <loc>https://ucapanbunga.com/cari/karangan-bunga-palembang</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-dukacita-palembang</loc>
+        <loc>https://ucapanbunga.com/cari/papan-dukacita-palembang</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-selamat-nikah-palembang</loc>
+        <loc>https://ucapanbunga.com/cari/papan-selamat-nikah-palembang</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/Hari-Ulang-Tahun-Kejaksaan</loc>
+        <loc>https://ucapanbunga.com/cari/Hari-Ulang-Tahun-Kejaksaan</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/papan-bunga-ucapan-selamat</loc>
+        <loc>https://ucapanbunga.com/cari/papan-bunga-ucapan-selamat</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/ucapan-HUT-Kejaksaan</loc>
+        <loc>https://ucapanbunga.com/cari/ucapan-HUT-Kejaksaan</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/UcapanBunga.com</loc>
+        <loc>https://ucapanbunga.com/cari/UcapanBunga.com</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
     <url>
-        <loc>http://localhost:8000/cari/penghargaan-untuk-kejaksaan</loc>
+        <loc>https://ucapanbunga.com/cari/penghargaan-untuk-kejaksaan</loc>
         <lastmod>2024-07-05T00:00:00+07:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
             </url>
 </urlset>

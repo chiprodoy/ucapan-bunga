@@ -5,8 +5,10 @@
     <div class="container">
       <div class="card">
         <div class="card-body">
-
-          <div class="row">
+        @if (empty($products))
+            <h4>Halaman tidak ditemukan</h4>
+        @else
+        <div class="row">
             <div class="col-md-8">
                 <img class="img-fluid" src="{{ asset('images/'.$products->image_cover)}}" alt="gambar {{ $products->product_name}}" />
             </div>
@@ -27,10 +29,22 @@
             </a>
             </div>
           </div>
+        @endif
         </div>
       </div>
 
     </div>
+    {{-- end container --}}
+    <div class="card">
+        <div class="card-body">
+            <h5>Terkait</h5>
+            <ul style="list-style: none">
+            @foreach ($relateProducts as $item)
+                <li><a href="{{route('public.product.show',$item->product_slug)}}">{{$item->product_name}}</a></li>
+            @endforeach
+            </ul>
+        </div>
+      </div>
   </section>
 
   @include('footer')
