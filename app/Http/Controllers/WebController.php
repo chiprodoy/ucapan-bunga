@@ -21,5 +21,9 @@ class WebController extends Controller
         $this->keyword = env('KEYWORDS');
         $this->keywords = explode(',',env('KEYWORDS'));
 
+
+
     }
 }
+
+
