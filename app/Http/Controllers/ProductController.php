@@ -5,9 +5,14 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
+use function PHPUnit\Framework\isNull;
+
 class ProductController extends WebController
 {
     public $products;
+
+    public $relateProducts;
+
     /**
      * Display a listing of the resource.
      */
@@ -42,6 +47,11 @@ class ProductController extends WebController
     public function show(string $slug)
     {
         $this->products = Product::where('product_slug',$slug)->first();
+
+        if(empty($this->products)){
+            return redirect()->route('public.product');
+        }
+
         $this->title=$this->products->product_name;
         $this->description = strip_tags($this->products->product_description);
 
@@ -56,6 +66,17 @@ class ProductController extends WebController
         if(!empty($this->products->meta_description)){
             $this->description = $this->products->meta_description;
         }
+
+
+        $keywords=str_replace(',','',$this->keyword);
+        $keywords=explode(' ',$keywords);
+        $sql=Product::query();
+
+        foreach($keywords as $k => $v){
+            $sql->orwhere('product_slug','like','%'.$v.'%');
+        }
+
+        $this->relateProducts=$sql->get();
 
         return view('product.show',get_object_vars($this));
         //
