@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jual {{ str_replace('-',' ',$query) }} - UcapanBunga.com</title>
+    <meta title="Jual {{ str_replace('-',' ',$query) }} - UcapanBunga.com"/>
     <meta name="description"
         content="Jual {{ str_replace('-',' ',$query) }}. Temukan produk papan bunga terbaik dan harga bersahabat di UcapanBunga.com.">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
