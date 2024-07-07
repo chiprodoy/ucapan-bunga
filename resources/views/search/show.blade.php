@@ -3,7 +3,7 @@
 
 <body>
     <div class="container mt-5">
-        <h1>Hasil pencarian untuk "{{ str_replace('-',' ',$query) }}"</h1>
+        <h1>Jual {{ str_replace('-',' ',$query) }}</h1>
         @if ($products->isEmpty())
             <p>Tidak ada produk yang sesuai dengan pencarian anda.</p>
         @else
