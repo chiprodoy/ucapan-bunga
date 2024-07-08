@@ -10,6 +10,7 @@
   <meta name="robots" content="index, follow" />
 
   <meta property="og:title" content="{{$title}}" />
+  <meta property="og:site_name" content="Ucapan Bunga" />
   <meta property="og:description" content="{{$description}}" />
   <meta property="og:image" content="{{asset($metaImage)}}" />
   <meta property="og:url" content="{{url()->current()}}" />
@@ -40,6 +41,26 @@
     gtag('js', new Date());
 
     gtag('config', 'G-NQL97SECS7');
+    </script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ucapan Bunga",
+        "url": "https://ucapanbunga.com",
+        {{-- "logo": "https://ucapanbunga.com/logo.png", --}}
+        "sameAs": [
+            "https://www.facebook.com/ucapanbunga",
+            "https://www.instagram.com/ucapanbunga",
+            {{-- "https://www.twitter.com/ucapanbunga" --}}
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-21-12345678",
+            "contactType": "Customer Service"
+        }
+    }
     </script>
 </head>
 
