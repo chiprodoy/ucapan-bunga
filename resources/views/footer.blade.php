@@ -13,7 +13,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4" style="height: 250px; overflow:hidden">
                 <h5>Keywords</h5>
 
                     @foreach ($keywords as $item)
