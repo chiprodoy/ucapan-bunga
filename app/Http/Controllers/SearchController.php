@@ -51,6 +51,7 @@ class SearchController extends WebController
         $this->title="Jual ".str_replace('-',' ',$this->query)." | UcapanBunga.com";
         $this->description = "Jual ".str_replace('-',' ',$this->query)." Temukan produk ".str_replace('-',' ',$this->query)." terbaik dan harga bersahabat di UcapanBunga.com.";
         $this->keyword = $this->keyword.', '.str_replace('-',' ',$this->query);
+        $this->metaImage = asset('images/product1.jpg');
 
         $sql = Product::where('product_name', 'like', "%$this->query%")
                             ->orWhere('product_description', 'like', "%$this->query%");

@@ -21,7 +21,10 @@ class ProductController extends WebController
         $this->title='Produk Ucapan Bunga - Pesan Ucapan Papan bunga sekarang di ucapanbunga.com';
         $this->description = 'Berikan kesan yang tak terlupakan dengan ucapan papan bunga kami. Pesan sekarang di UcapanBunga.com';
         $this->keywords = explode(',',$this->keyword);
+        $this->metaImage = asset('images/product1.jpg');
+
         $this->products=Product::all();
+
         return view('product.index',get_object_vars($this));
     }
 
@@ -54,6 +57,7 @@ class ProductController extends WebController
 
         $this->title=$this->products->product_name;
         $this->description = strip_tags($this->products->product_description);
+        $this->metaImage = asset('images/'.$this->products->product_cover);
 
         if(!empty($this->products->meta_title)){
             $this->title = $this->products->meta_title;

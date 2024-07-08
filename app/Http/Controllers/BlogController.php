@@ -21,6 +21,8 @@ class BlogController extends WebController
                                 Pesan sekarang di UcapanBunga.com';
 
         $this->keywords = explode(',',$this->keyword);
+        $this->metaImage = asset('images/product1.jpg');
+
         $this->blogs=Blog::all();
         return view('blog.index',get_object_vars($this));
     }
@@ -51,6 +53,8 @@ class BlogController extends WebController
         $this->description = strip_tags($this->blogs->content);
 
         $this->blogs->content = str_replace('UcapanBunga.com',"<a href='ucapanbunga.com'>UcapanBunga.com</a>",$this->blogs->content);
+
+        $this->metaImage = asset('images/'.$this->blogs->image_cover);
 
         if(!empty($this->blogs->meta_title)){
             $this->title = $this->blogs->meta_title;

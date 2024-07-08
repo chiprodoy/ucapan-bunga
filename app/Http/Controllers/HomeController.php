@@ -21,6 +21,7 @@ class HomeController extends WebController
         $this->title='Ucapan Bunga - Pesan Ucapan Papan bunga sekarang di ucapanbunga.com';
         $this->description = 'Berikan kesan yang tak terlupakan dengan ucapan papan bunga kami. Pesan sekarang di UcapanBunga.com';
         $this->keywords = explode(',',$this->keyword);
+        $this->metaImage = asset('images/product1.jpg');
 
         $this->products=Product::all();
 
