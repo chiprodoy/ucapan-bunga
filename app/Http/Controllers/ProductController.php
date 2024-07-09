@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -13,16 +14,18 @@ class ProductController extends WebController
 
     public $relateProducts;
 
+    public $blogs;
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
         $this->title='Produk Ucapan Bunga - Pesan Ucapan Papan bunga sekarang di ucapanbunga.com';
-        $this->description = 'Berikan kesan yang tak terlupakan dengan ucapan papan bunga kami. Pesan sekarang di UcapanBunga.com';
+        $this->description = 'Jual ucapan papan bunga murah dengan berbagai pilihan dan desain kreatif. Hubungi kami untuk mendapatkan papan bunga berkualitas tinggi, pelayanan profesional, dan pengiriman cepat. Pesan sekarang di UcapanBunga.com';
         $this->keywords = explode(',',$this->keyword);
         $this->metaImage = asset('images/product1.jpg');
-
+        $this->blogs = Blog::all();
         $this->products=Product::all();
 
         return view('product.index',get_object_vars($this));
