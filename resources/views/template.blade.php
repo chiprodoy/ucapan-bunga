@@ -52,7 +52,7 @@
         {{-- "logo": "https://ucapanbunga.com/logo.png", --}}
         "sameAs": [
             "https://www.facebook.com/ucapanbunga",
-            "https://www.instagram.com/ucapanbunga",
+            "https://www.instagram.com/ucapanbunga"
             {{-- "https://www.twitter.com/ucapanbunga" --}}
         ],
         "contactPoint": {

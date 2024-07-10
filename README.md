@@ -64,3 +64,9 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+SELECT 
+CONCAT('papan bunga ',reg_villages.`name`,',','papan ucapan ',reg_villages.`name`,',','papan bunga murah ',reg_villages.`name`,',') AS col1
+ FROM reg_villages 
+INNER JOIN reg_districts ON reg_villages.`district_id`=reg_districts.`id`
+WHERE regency_id=1607
