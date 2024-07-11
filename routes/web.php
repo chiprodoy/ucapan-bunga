@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrderController;
@@ -32,3 +33,5 @@ Route::get('/produk/{productslug}',[ProductController::class,'show'])->name('pub
 
 Route::get('/blog',[BlogController::class,'index'])->name('public.blog');
 Route::get('/blog/{slug}',[BlogController::class,'show'])->name('public.blog.show');
+
+Route::get('/admin/generate-sitemap',[AdminController::class,'generateSiteMap']);
